@@ -1,0 +1,89 @@
+﻿@model HR.helper.PaginatedList<CountryDTO>
+
+@{
+    ViewData["Title"] = "GetAllCountries";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+        <h2 class="mb-4">Countrys List</h2>
+        <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Country"><i class="fa-solid fa-plus"></i> New Country</a>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 mb-3">
+            <form asp-controller="Country" asp-action="GetAllCountries" method="get" class="form-inline">
+
+                <!-- Search input -->
+                <div class="input-group col-md-3">
+                    <input type="text" class="form-control form-control-md" name="search" placeholder="Search..." value="@ViewBag.SearchTerm">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <a href="@Url.Action("GetAllCountries", "Country")" class="btn btn-outline-danger">
+                            <i class="fa-solid fa-eraser"></i> Clear
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (CountryDTO item in Model.Items)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>
+                        <a class="btn btn-outline-success" asp-action="EditCountry" asp-route-id="@item.Id" style="border-radius:25px">Edit <i class="fa-regular fa-pen-to-square"></i></a>
+                        <a class="btn btn-outline-danger" onclick="showDeleteConfirmation('@item.Id')" style="border-radius:25px"> Delete <i class="fa-solid fa-trash"></i></a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div class="mb-3">
+
+    <ul class="pagination pagination-sm">
+        @for (int i = 1; i <= Model.pagesCount; i++)
+        {
+            <li class="page-item">
+
+                <a class="page-link" asp-action="GetAllCountries" asp-asp-controller="Country" asp-route-PageNumber="@i">@i</a>
+            </li>
+        }
+
+
+    </ul>
+
+</div>
+
+<script>
+    function showDeleteConfirmation(CountryId) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'This action will delete all Cities related to this Country',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                window.location.href = 'http://localhost/hr/Country/Delete/' + CountryId;
+            }
+        });
+    }
+</script>
+

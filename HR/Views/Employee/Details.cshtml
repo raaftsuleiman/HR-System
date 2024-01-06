@@ -1,0 +1,91 @@
+﻿@model EmployeeDTO
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Employee Details</h2>
+
+    @if (Model != null)
+    {
+        <div class="row">
+            <div class="col-md-4">
+                @if (!string.IsNullOrEmpty(Model.ImageName))
+                {
+                    <img src="~/@Model.ImageName" alt="Employee Image" class="img-fluid rounded-circle">
+                }
+                else
+                {
+                    <span>No image available</span>
+                }
+            </div>
+            <div class="col-md-8">
+                <dl class="row">
+                    <dt class="col-sm-3">First Name:</dt>
+                    <dd class="col-sm-9">@Model.FirstName</dd>
+
+                    <dt class="col-sm-3">Last Name:</dt>
+                    <dd class="col-sm-9">@Model.LastName</dd>
+
+                    <dt class="col-sm-3">Phone Number:</dt>
+                    <dd class="col-sm-9">@Model.PhoneNumber</dd>
+
+                    <dt class="col-sm-3">Email:</dt>
+                    <dd class="col-sm-9">@Model.Email</dd>
+
+                    <dt class="col-sm-3">Gender:</dt>
+                    <dd class="col-sm-9">@Model.Gender</dd>
+
+                    <dt class="col-sm-3">Country:</dt>
+                    <dd class="col-sm-9">@Model.countries.Name</dd>
+
+                    <dt class="col-sm-3">City:</dt>
+                    <dd class="col-sm-9">@Model.cities.Name</dd>
+
+                    <dt class="col-sm-3">Date of Birth:</dt>
+                    <dd class="col-sm-9">@Model.DateOfBirth.ToShortDateString()</dd>
+
+                    <dt class="col-sm-3">Hire Date:</dt>
+                    <dd class="col-sm-9">@Model.HireDate.ToShortDateString()</dd>
+
+                    <dt class="col-sm-3">Department:</dt>
+                    <dd class="col-sm-9">@Model.department.Name</dd>
+
+                    <dt class="col-sm-3">Position:</dt>
+                    <dd class="col-sm-9">@Model.positions.Name</dd>
+
+                    <dt class="col-sm-3">Salary:</dt>
+                    <dd class="col-sm-9">@Model.Salary.ToString("C")</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <a asp-action="EditEmployee" asp-route-id="@Model.Id" class="btn btn-outline-success">Edit Employee</a>
+            <button onclick="showDeleteConfirmation('@Model.Id')" class="btn btn-outline-danger">Delete Employee</button>
+        </div>
+    }
+    else
+    {
+        <p>Error: Employee data is not available.</p>
+    }
+</div>
+
+<script>
+    function showDeleteConfirmation(employeeId) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'You won\'t be able to revert this!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = `http://localhost/hr/Employee/Delete/${employeeId}`;
+            }
+        });
+    }
+</script>

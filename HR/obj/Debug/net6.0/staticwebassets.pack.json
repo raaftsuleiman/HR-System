@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HR.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HR.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\02717925-9f2a-43be-8920-77d0baa1e7b3.jpg",
+      "PackagePath": "staticwebassets\\02717925-9f2a-43be-8920-77d0baa1e7b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\40ca00aa-32a2-4409-8e95-22b5e27e2298.jpg",
+      "PackagePath": "staticwebassets\\40ca00aa-32a2-4409-8e95-22b5e27e2298.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\452b76e7-65a9-4588-a4e6-f53cc5facca1.jpg",
+      "PackagePath": "staticwebassets\\452b76e7-65a9-4588-a4e6-f53cc5facca1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\6ce9d984-4809-4608-8e12-e8d055646ab9.jpg",
+      "PackagePath": "staticwebassets\\6ce9d984-4809-4608-8e12-e8d055646ab9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\7a487d9b-41ea-4a0c-afcf-3ec9760ecdd5.jpg",
+      "PackagePath": "staticwebassets\\7a487d9b-41ea-4a0c-afcf-3ec9760ecdd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\86d7a270-ec94-44f9-805f-dafd0e16baa1.jpg",
+      "PackagePath": "staticwebassets\\86d7a270-ec94-44f9-805f-dafd0e16baa1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\88b38bbf-468a-47c4-8514-0d717c096019.jpg",
+      "PackagePath": "staticwebassets\\88b38bbf-468a-47c4-8514-0d717c096019.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\898d17fa-8717-4cba-94b1-ddcc75c73402.jpg",
+      "PackagePath": "staticwebassets\\898d17fa-8717-4cba-94b1-ddcc75c73402.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\97aadb82-f598-4688-9a78-6ab415b2401e.jpg",
+      "PackagePath": "staticwebassets\\97aadb82-f598-4688-9a78-6ab415b2401e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\9a707623-560f-43c7-9693-97fa64aa96db.jpg",
+      "PackagePath": "staticwebassets\\9a707623-560f-43c7-9693-97fa64aa96db.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\9e71764a-6f8a-4e7e-9d0d-7d12c763b442.jpg",
+      "PackagePath": "staticwebassets\\9e71764a-6f8a-4e7e-9d0d-7d12c763b442.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\a51c431e-03b7-407d-a87a-213050276544.jpg",
+      "PackagePath": "staticwebassets\\a51c431e-03b7-407d-a87a-213050276544.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\b10e7b74-5c4a-40be-aeac-a5b48a9784b2.jfif",
+      "PackagePath": "staticwebassets\\b10e7b74-5c4a-40be-aeac-a5b48a9784b2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\e964d53d-f669-4465-8eca-340f784e4748.jpg",
+      "PackagePath": "staticwebassets\\e964d53d-f669-4465-8eca-340f784e4748.jpg"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\style1.css",
+      "PackagePath": "staticwebassets\\style1.css"
+    },
+    {
+      "Id": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\wwwroot\\style2.css",
+      "PackagePath": "staticwebassets\\style2.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HR.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HR.props",
+      "PackagePath": "build\\HR.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HR.props",
+      "PackagePath": "buildMultiTargeting\\HR.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HR.props",
+      "PackagePath": "buildTransitive\\HR.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

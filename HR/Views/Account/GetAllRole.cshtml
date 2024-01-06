@@ -1,0 +1,44 @@
+﻿@model VmUsersAndRole
+
+@{
+    ViewData["Title"] = "GetAllRole";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h1> User Role</h1>
+
+<form method="post">
+<div class="row">
+    <div class="col-6">
+
+
+
+
+<div class="card">
+  <div class="card-header">
+                    <input asp-for="userDTO.Username" type="text" readonly class="form-control" style="background-color:#343a40;color:white">
+                    <input type="hidden" readonly asp-for="userDTO.Id" />
+  </div>
+
+  <div class="card-body">
+
+                    @for (int i = 0; i < Model.listroleDTO.Count; i++)
+
+                    {
+                      <div class="form-check">
+                            <input type="hidden" asp-for="@Model.listroleDTO[i].Name">
+                            <input type="hidden" readonly asp-for="@Model.listroleDTO[i].Id">
+                            <input class="form-check-input" type="checkbox" asp-for="@Model.listroleDTO[i].IsSelected" />
+                          <label class="form-check-label" formaction="flexCheckDefault">
+                                @Model.listroleDTO[i].Name
+                          </label>
+                      </div>
+                    }
+  </div>
+    <div class="card-footer">
+                    <input type="submit" value="Update" class="btn btn-outline-primary" asp-action="UpdateRole" />
+    </div>
+</div>
+    </div>
+</div>
+</form>

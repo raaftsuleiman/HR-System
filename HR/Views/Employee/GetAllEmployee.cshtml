@@ -1,0 +1,212 @@
+﻿@model HR.helper.PaginatedList<EmployeeDTO>
+@{
+    ViewData["Title"] = "GetAllEmployee";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+        <h2 class="mb-4">Employee List</h2>
+        <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Employee"><i class="fa-solid fa-user-plus"></i> New Employee</a>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12 mb-3">
+            <form asp-controller="Employee" asp-action="GetAllEmployee" method="get" class="form-inline">
+
+                <!-- Search input -->
+                <div class="input-group col-md-3">
+                    <input type="text" class="form-control form-control-md" name="search" placeholder="Search..." value="@ViewBag.SearchTerm">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <a href="@Url.Action("GetAllEmployee", "Employee")" class="btn btn-outline-danger">
+                            <i class="fa-solid fa-eraser"></i> Clear
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Filter dropdowns -->
+                <div class="input-group col-md-9">
+                    <select class="form-control" name="DepartmentFilter">
+                        <option value="">Departments</option>
+                        @{
+                            var allUniqueDepartments = ViewBag.AllUniqueDepartments as List<DepartmentDTO>;
+                            string selectedDepartment = ViewBag.SelectedDepartmentFilter as string;
+                            if (allUniqueDepartments != null)
+                            {
+                                foreach (var Department in allUniqueDepartments)
+                                {
+                                    if (Department.Id.ToString() == selectedDepartment)
+                                    {
+                                        <option value="@Department.Id" selected>@Department.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@Department.Id">@Department.Name</option>
+                                    }
+                                }
+                            }
+                        }
+                    </select>
+
+
+
+
+                    <select class="form-control" name="PositionFilter">
+                        <option value="">Positions</option>
+                        @{
+                            var allUniquePosition = ViewBag.AllUniqueposition as List<PositionDTO>;
+                            string selectedPosition = ViewBag.selectedpositionFilter as string;
+                            if (allUniquePosition != null)
+                            {
+                                foreach (var Position in allUniquePosition)
+                                {
+                                    if (Position.Id.ToString() == selectedPosition)
+                                    {
+                                        <option value="@Position.Id" selected>@Position.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@Position.Id">@Position.Name</option>
+                                    }
+                                }
+                            }
+                        }
+                    </select>
+
+
+                    <select class="form-control" name="CountryFilter">
+                        <option value="">Countries</option>
+                        @{
+                            var allUniqueCountry = ViewBag.AllUniquecountry as List<CountryDTO>;
+                            string selectedCountry = ViewBag.selectedcountryFilter as string;
+                            if (allUniqueCountry != null)
+                            {
+                                foreach (var Country in allUniqueCountry)
+                                {
+                                    if (Country.Id.ToString() == selectedCountry)
+                                    {
+                                        <option value="@Country.Id" selected>@Country.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@Country.Id">@Country.Name</option>
+                                    }
+                                }
+                            }
+                        }
+                    </select>
+
+
+                    
+                   
+                    
+                    <select class="form-control" name="GenderFilter">
+                        <option value="">Genders</option>
+                        <option value="Male" selected=@(ViewBag.selectedgenderFilter == "Male")>Male</option>
+                        <option value="Female" selected=@(ViewBag.selectedgenderFilter == "Female")>Female</option>
+                    </select>
+
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-outline-warning"><i class="fa-solid fa-filter"></i> Filter</button>
+                    </div>
+
+                    
+                    <div class="input-group-append">
+                        <a href="@Url.Action("GetAllEmployee", "Employee")" class="btn btn-outline-danger">
+                            <i class="fa-solid fa-filter-circle-xmark"></i> Clear
+                        </a>
+                    </div>
+
+                   
+                   
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Department</th>
+                <th>Position</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (EmployeeDTO item in Model.Items)
+            {
+                <tr>
+                    <td><img src="~/@item.ImageName" alt="img" width="50" height="50" style="border-radius:5px"/></td>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Email</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.department.Name</td>
+                    <td>@item.positions.Name</td>
+                    <td>
+                        <a class="btn btn-outline-success" asp-action="EditEmployee" asp-route-id="@item.Id" style="border-radius:25px">Edit <i class="fa-regular fa-pen-to-square"></i></a>
+                        <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.Id" style="border-radius:25px">Details <i class="fa-solid fa-circle-info"></i></a>
+                        <a class="btn btn-outline-danger" onclick="showDeleteConfirmation('@item.Id')" style="border-radius:25px"> Delete <i class="fa-solid fa-trash"></i></a>
+                    
+                    
+                    </td>
+                </tr>
+               }
+        </tbody>
+    </table>
+</div>
+<div class="mb-3">
+
+        <ul class="pagination pagination-sm">
+        @for (int i = 1; i <= Model.pagesCount; i++)
+        {
+            <li class="page-item">
+                <a class="page-link"
+               asp-action="GetAllEmployee"
+               asp-controller="Employee"
+               asp-route-PageNumber="@i"
+               asp-route-search="@ViewBag.SearchTerm"
+               asp-route-DepartmentFilter="@ViewBag.SelectedDepartmentFilter"
+               asp-route-PositionFilter="@ViewBag.selectedpositionFilter"
+               asp-route-CountryFilter="@ViewBag.selectedcountryFilter"
+               asp-route-GenderFilter="@ViewBag.selectedgenderFilter">
+                    @i
+                </a>
+            </li>
+        }
+
+
+        </ul>
+
+</div>
+
+ <script>
+        function showDeleteConfirmation(employeeId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You won\'t be able to revert this!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    
+                    window.location.href = 'http://localhost/hr/Employee/Delete/' + employeeId;
+                }
+            });
+        }
+    </script>

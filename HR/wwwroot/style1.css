@@ -1,0 +1,114 @@
+        body {
+            
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+           
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px;
+        }
+
+            .navbar img {
+
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .navbar a {
+                color: #ffffff;
+            }
+
+        .sidebar {
+            position: fixed;
+            width: 250px;
+            height: 100%;
+            background-color: #343a40;
+            color: #ffffff;
+            transition: all 0.3s;
+            overflow-y: auto; 
+            top: 0; 
+           
+        }
+
+            .sidebar a {
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 16px;
+                color: #ffffff;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+                .sidebar a i {
+                    margin-right: 10px;
+                }
+
+                .sidebar a:hover {
+                    background-color: #495057;
+                    color: #ffc107;
+                }
+
+            .sidebar img {
+                display: block;
+                margin: 65px auto 30px;
+                border-radius: 50%;
+            }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            transition: all 0.3s;
+            padding-top: 60px;
+        }
+
+        .drawer-btn {
+            position: fixed;
+            top: 10px;
+            left: 13%;
+            cursor: pointer;
+            z-index: 1000;
+            color: #343a40;
+            background-color: #ffffff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+            .drawer-btn:hover {
+                background-color: #e9ecef;
+            }
+
+
+.spinner-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+            border: 4px solid #ffc107; 
+    border-radius: 50%;
+    border-top: 4px solid transparent;
+    animation: spin 1s linear infinite;
+}
+
+

@@ -1,0 +1,146 @@
+﻿@model VmDepartmentPosition
+@{
+    ViewData["Title"] = "AddNewPosition";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#updateButton").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You are about to update the Position.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, update it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    updatePosition();
+                }
+            });
+        });
+
+        function updatePosition() {
+            var formData = new FormData($("form")[0]);
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("UpdatePosition", "Position")',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    Swal.fire({
+                        title: 'Updated Successfully!',
+                        text: 'The Position has been updated successfully.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = '@Url.Action("GetAllPositions", "Position")';
+                    });
+                },
+                error: function () {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong during the update.',
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+
+        $("#addPositionBtn").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You are about to add the Position.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    addPosition();
+                }
+            });
+        });
+
+        function addPosition() {
+            var formData = new FormData($("form")[0]);
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("AddNewPosition", "Position")',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    Swal.fire({
+                        title: 'Added Successfully!',
+                        text: 'The Position has been added successfully.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = '@Url.Action("GetAllPositions", "Position")';
+                    });
+                },
+                error: function () {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong.',
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+    });
+</script>
+
+
+<h1>Position</h1>
+
+
+<div class="container mt-4">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row mb-2">
+            <input type="hidden" readonly asp-for="positionDTO.Id" />
+
+            <div class="row mb-2">
+
+                <div class="col-md-6">
+                    <label for="Department" class="form-label">Department</label>
+                    <select class="form-select" id="ddDepartment" asp-for="positionDTO.DepartmentId" asp-items='new SelectList(Model.departments,"Id","Name")'>
+                        <option selected>Select Department</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <div class="mb-3 col-md-6">
+                <input type="hidden" readonly asp-for="positionDTO.Id" />
+                <label class="form-label">Department Name</label>
+                <input asp-for="positionDTO.Name" type="text" class="form-control" placeholder="Enter Position Name">
+                <span asp-validation-for="positionDTO.Name"></span>
+            </div>
+
+
+
+            @if (Model.positionDTO != null)
+            {
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary" id="updateButton" value="Update">
+                </div>
+
+            }
+            else
+            {
+                <div class="mb-3">
+                    <input type="submit" class="btn btn-primary" id="addPositionBtn" value="Add New Position">
+                </div>
+            }
+    </form>
+</div>

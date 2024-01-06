@@ -1,0 +1,286 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model VmEmployeeAndRelatedEntities
+@{
+    ViewData["Title"] = "NewEmployee";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        function populateDropdown(url, dropdown, keyField, valueField) {
+            $.ajax({
+                type: 'get',
+                url: url,
+                success: function (data) {
+                    $(dropdown + ' option').remove();
+                    $.each(data, function (index, item) {
+                        $(dropdown).append("<option value=" + item[keyField] + "> " + item[valueField] + "</option>");
+                    });
+                },
+                error: function () {
+                    alert("error");
+                },
+            });
+        }
+
+        $("#ddCountry").change(function () {
+            populateDropdown('/HR/Employee/getCityBYCountry?Country_Id=' + $("#ddCountry").val(), "#city_id", "id", "name");
+        });
+
+        $("#department").change(function () {
+            populateDropdown('/HR/Employee/getPositionBYDepartment?Department_Id=' + $("#department").val(), "#position", "id", "name");
+        });
+
+        $("#updateButton").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You are about to update the employee.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, update it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    updateEmployee();
+                }
+            });
+        });
+
+        function updateEmployee() {
+            var formData = new FormData($("form")[0]);
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost/hr/Employee/UpdateEmployee',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    Swal.fire({
+                        title: 'Updated Successfully!',
+                        text: 'The employee has been updated successfully.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = 'http://localhost/hr/Employee/GetAllEmployee';
+                    });
+                },
+                error: function () {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong during the update.',
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+
+        $("#addEmployeeBtn").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You are about to add the employee.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    addEmployee();
+                }
+            });
+        });
+
+        function addEmployee() {
+            var formData = new FormData($("form")[0]);
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost/hr/Employee/AddNewEmployee',
+                data: formData,
+                contentType: false,
+                processData: false
+            })
+                .done(function (data) {
+                    Swal.fire({
+                        title: 'Added Successfully!',
+                        text: 'The employee has been added successfully.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = 'http://localhost/hr/Employee/GetAllEmployee';
+                    });
+                })
+                .fail(function () {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong.',
+                        icon: 'error'
+                    });
+                });
+        }
+    });
+</script>
+
+ @if (Model.employee!=null)
+    {
+    <h1>Edit Employee</h1>
+}
+
+else
+{
+    <h1>New Employee</h1>
+}
+
+<div class="container mt-4">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row mb-2">
+            <input type="hidden" readonly asp-for="employee.Id" />
+            <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" asp-for="employee.FirstName" class="form-control" id="firstName" placeholder="First Name">
+                <span asp-validation-for="employee.FirstName" style="color:red"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" asp-for="employee.LastName" asp-for="employee.FirstName" class="form-control" id="lastName" placeholder="Last Name">
+                <span asp-validation-for="employee.LastName" style="color:red"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" asp-for="employee.Email" class="form-control" id="email" placeholder="name@example.com">
+                <span asp-validation-for="employee.Email" style="color:red"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" asp-for="employee.PhoneNumber" class="form-control" id="phoneNumber" placeholder="07XXXXXXXX">
+                <span asp-validation-for="employee.PhoneNumber" style="color:red"></span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label for="formFile" class="form-label">Image</label>
+                <input class="form-control" type="file" asp-for="employee.iformfile">
+
+               
+            </div>
+
+            <div class="col-md-6">
+                Gender:
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="employee.Gender"  id="inlineRadio1" value="Male">
+                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" asp-for="employee.Gender"  id="inlineRadio2" value="Female">
+                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" asp-for="employee.DateOfBirth" class="form-control" id="dob">
+                <span asp-validation-for="employee.DateOfBirth" style="color:red"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="hireDate" class="form-label">Hire Date</label>
+                <input type="date" asp-for="employee.HireDate" class="form-control" id="hireDate">
+               
+            </div>
+        </div>
+
+        <div class="row mb-2">
+ 
+            <div class="col-md-6">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="ddCountry" asp-for="employee.CountryId" asp-items='new SelectList(Model.country,"Id","Name")'>
+                    <option selected>Select Country</option>
+                </select>
+            </div>
+           
+            <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <select class="form-select" id="city_id" asp-for="employee.CityId" asp-items='new SelectList(Model.city,"Id","Name")'>
+                    <option selected>Select City</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label for="position" class="form-label">Department</label>
+
+                <select class="form-select" id="department" asp-for="employee.DepartmentID" asp-items='new SelectList(Model.department,"Id","Name")'>
+                    <option selected>Select Department</option>
+                    </select>
+                   
+               
+            </div>
+            <div class="col-md-6">
+                <label for="position" class="form-label">Position</label>
+                <select class="form-select" id="position" asp-for="employee.PositionId" asp-items='new SelectList(Model.position,"Id","Name")'>
+                    <option selected>Select Position</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="salary" class="form-label">Salary</label>
+                <input type="text" class="form-control" asp-for="employee.Salary" id="salary" placeholder="$0.00">
+                <span asp-validation-for="employee.Salary" style="color:red"></span>
+            </div>
+
+             <div class="col-md-6">
+                
+                <input type="text" class="form-control" asp-for="employee.ApplicationUserId" hidden>
+                
+            </div>
+
+            <div class="col-md-6">
+                <label for="salary" class="form-label">Username</label>
+                <input type="text" class="form-control" asp-for="signUpModel.Username"  placeholder="Username">
+                <span asp-validation-for="signUpModel.Username" style="color:red"></span>
+                @if (ViewData.ContainsKey("result"))
+                {
+                    var result = ViewData["result"] as IdentityResult;
+
+                    if (result != null && !result.Succeeded)
+                    {
+                                <div class="text-danger">Error: @string.Join(", ", result.Errors.Select(error => error.Description))</div>
+                    }
+                }
+            </div>
+
+            <div class="col-md-6">
+                <label for="salary" class="form-label">Password</label>
+                <input type="password" class="form-control" asp-for="signUpModel.Password"  placeholder="Password">
+                <span asp-validation-for="signUpModel.Password" style="color:red"></span>
+            </div>
+        </div>
+
+       
+
+       @if (Model.employee!=null)
+    {
+        <div class="mb-3">
+            <input type="submit" class="btn btn-primary" id="updateButton" value="Update">
+        </div>
+        <img src="~/@Model.employee.ImageName" style="width:100px">
+        @if (Model.employee.ImageName != null)
+        {
+            <input type="hidden" asp-for="employee.ImageName">
+        }
+    }
+    else
+    {
+        <div class="mb-3">
+            <input type="submit" class="btn btn-primary" id="addEmployeeBtn" value="Add New Employee">
+        </div>
+    }
+    </form>
+</div>

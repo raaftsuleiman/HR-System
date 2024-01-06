@@ -1,0 +1,146 @@
+﻿@model CountryDTO
+
+@{
+    ViewData["Title"] = "NewCountry";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#addCountry").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You are about to add the Country.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    addCountry();
+                }
+            });
+        });
+
+        function addCountry() {
+            var formData = new FormData($("form")[0]);
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("SaveCountry", "Country")',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    Swal.fire({
+                        title: 'Added Successfully!',
+                        text: 'The Country has been added successfully.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = '@Url.Action("GetAllCountries", "Country")';
+                    });
+                },
+                error: function () {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong.',
+                        icon: 'error'
+                    });
+                }
+            });
+            return false;
+        }
+
+        $("#updateButton").click(function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You are about to update the Country.',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, update it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    updateCountry();
+                }
+            });
+        });
+
+        function updateCountry() {
+            var formData = new FormData($("form")[0]);
+            $.ajax({
+                type: 'post',
+                url: '@Url.Action("UpdateCountry", "Country")',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    Swal.fire({
+                        title: 'Updated Successfully!',
+                        text: 'The employee has been updated successfully.',
+                        icon: 'success'
+                    }).then(() => {
+                        window.location.href = '@Url.Action("GetAllCountries", "Country")';
+                    });
+                },
+                error: function () {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Something went wrong during the update.',
+                        icon: 'error'
+                    });
+                }
+            });
+        }
+
+    });
+</script>
+
+<div class="mb-3">
+
+    @if (Model != null)
+    {
+        <h1>Update</h1>
+    }
+    else
+    {
+        <h1>New Country</h1>
+    }
+
+
+</div>
+
+<form method="post">
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <input type="hidden" readonly asp-for="@Model.Id" />
+                <label class="form-label">Country Name</label>
+                <input asp-for="Name" type="text" class="form-control" placeholder="Enter Country Name">
+                <span asp-validation-for="Name"></span>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="mb-3">
+            </div>
+        </div>
+
+        @if (Model != null)
+        {
+            <div class="mb-3">
+                <input type="submit" class="btn btn-primary" id="updateButton" value="Update">
+            </div>
+
+        }
+        else
+        {
+            <div class="mb-3">
+                <input class="btn btn-primary" type="submit" id="addCountry" value="Add Country">
+            </div>
+        }
+
+    </div>
+</form>

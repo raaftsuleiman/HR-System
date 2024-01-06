@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model SignUpModel
+@{
+    ViewData["Title"] = "CreateAccount";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Username</label>
+                <input type="text" asp-for="Username" class="form-control" id="username" placeholder="Username">
+                <span asp-validation-for="Username" class="text-danger"></span>
+
+                @if (ViewData.ContainsKey("result"))
+                {
+                    var result = ViewData["result"] as IdentityResult;
+
+                    if (result != null && !result.Succeeded)
+                    {
+                                <div class="text-danger">Error: @string.Join(", ", result.Errors.Select(error => error.Description))</div>
+                    }
+                }
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <label for="lastName" class="form-label">Password</label>
+                <input type="password" asp-for="Password" class="form-control" id="password" placeholder="Password">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" class="btn btn-primary" id="addEmployeeBtn" value="Add New" asp-action="SignUp">
+        </div>
+    </form>
+</div>

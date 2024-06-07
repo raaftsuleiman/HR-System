@@ -9,141 +9,141 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HR
 build_property.RootNamespace = HR
-build_property.ProjectDir = C:\Users\raaft\Desktop\Dare Academy\My Projects\MVC\HR\HR\
+build_property.ProjectDir = C:\Users\raaft\Source\Repos\HR-System\HR\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\raaft\Desktop\Dare Academy\My Projects\MVC\HR\HR
+build_property.MSBuildProjectDirectory = C:\Users\raaft\Source\Repos\HR-System\HR
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Pages/Error.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Pages/_Layout.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Pages/_ViewImports.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Pages/_ViewStart.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/AccessDenied.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/AdminAndEmployeeView.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/AdminAndEmployeeView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZG1pbkFuZEVtcGxveWVlVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/CreateAccount.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/CreateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGVBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/GetAllRole.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/GetAllRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHZXRBbGxSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/NewRole.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/NewRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxOZXdSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/SignIn.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/UpdatePassword.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/UpdatePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVcGRhdGVQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Account/UserList.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Account/UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2VyTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/City/AddNewCity.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/City/AddNewCity.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxBZGROZXdDaXR5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/City/GetAllCities.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/City/GetAllCities.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0eVxHZXRBbGxDaXRpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Country/AddNewCountry.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Country/AddNewCountry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxBZGROZXdDb3VudHJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Country/GetAllCountries.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Country/GetAllCountries.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291bnRyeVxHZXRBbGxDb3VudHJpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Department/AddNewDepartment.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Department/AddNewDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBZGROZXdEZXBhcnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Department/GetAllDepartment.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Department/GetAllDepartment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxHZXRBbGxEZXBhcnRtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Employee/Details.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Employee/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Employee/GetAllEmployee.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Employee/GetAllEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcR2V0QWxsRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Employee/MyProfile.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Employee/MyProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTXlQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Employee/NewEmployee.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Employee/NewEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTmV3RW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Home/Index.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Home/Privacy.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/LeaveRequest/GetRequests.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/LeaveRequest/GetRequests.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVhdmVSZXF1ZXN0XEdldFJlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Position/AddNewPosition.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Position/AddNewPosition.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cQWRkTmV3UG9zaXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Position/GetAllPositions.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Position/GetAllPositions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zaXRpb25cR2V0QWxsUG9zaXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Shared/Error.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Shared/_LayoutEmployee.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Shared/_LayoutEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFbXBsb3llZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/_ViewImports.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/_ViewStart.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/raaft/Desktop/Dare Academy/My Projects/MVC/HR/HR/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/raaft/Source/Repos/HR-System/HR/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-oct9ffbhlx

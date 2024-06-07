@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cV6kou32CF319rBdYu0CYzcjjNOmQqXFSe4uIuT7lyXRi7VNE6hJEiaFR+2oapRcrjaPLwStm0TWDuREMxstzQ==",
+  "dgSpecHash": "Iiy4t+zNuClziIrzYTCBqqbB9vNceEL3p+KDvUeNn02Zhbw3rSxdCfzfFSmPddnh2t7eR1XtPkZEPLFlAl7TQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\HR.csproj",
+  "projectFilePath": "C:\\Users\\raaft\\Source\\Repos\\HR-System\\HR\\HR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raaft\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\raaft\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

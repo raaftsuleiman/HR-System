@@ -10922,11 +10922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\HR.csproj",
+      "projectUniqueName": "C:\\Users\\raaft\\Source\\Repos\\HR-System\\HR\\HR.csproj",
       "projectName": "HR",
-      "projectPath": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\HR.csproj",
+      "projectPath": "C:\\Users\\raaft\\Source\\Repos\\HR-System\\HR\\HR.csproj",
       "packagesPath": "C:\\Users\\raaft\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raaft\\Desktop\\Dare Academy\\My Projects\\MVC\\HR\\HR\\obj\\",
+      "outputPath": "C:\\Users\\raaft\\Source\\Repos\\HR-System\\HR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
